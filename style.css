@@ -45,6 +45,7 @@ body {
   background: hsl(248, 32%, 49%);
   margin: 20px;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .header p {
   padding: 10px;
@@ -59,6 +60,7 @@ body {
   margin-bottom: 30px;
   line-height: 1.8;
   background: rgb(255, 254, 254);
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 7.5px;
   min-height: 350px;
 }
@@ -75,8 +77,18 @@ body {
 input:hover {
   border: 2px solid hsl(248, 32%, 49%);
 }
+#form1,
+#form2,
+#form3,
+#form4 {
+  background-image: none;
+  background-position: 380px 5px;
+  background-repeat: no-repeat;
+  padding-left: 17px;
+}
 .form .btn {
   background: hsl(154, 59%, 51%);
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: none;
   color: white;
   width: 425px;
@@ -84,11 +96,24 @@ input:hover {
   margin: 10px auto;
   padding: 10px;
   border-radius: 5px;
+  font-size: 15px;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 .btn:hover {
-  background: hsl(154, 68%, 66%);
+  background: hsl(154, 52%, 60%);
+}
+.email-error {
+  color: red;
+}
+#alert-fname,
+#alert-lname,
+#alert-email,
+#alert-password {
+  text-align: right;
+  font-size: 10px;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
 }
 .cond p {
   padding: 20px;
@@ -173,4 +198,5 @@ input:hover {
 }
 .attribution a {
   color: hsl(246, 63%, 35%);
+  text-decoration: none;
 }
